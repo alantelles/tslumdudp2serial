@@ -20,7 +20,7 @@ void setState(int pin, int stat) {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  
   int red = Serial.readBytes(msg, buf_size);
   int recv = msg[0] + 127;
   int stat = msg[1];
